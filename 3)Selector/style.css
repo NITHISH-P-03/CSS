@@ -1,0 +1,116 @@
+*{  /* here * - asteris is a universal selector which is used to select all in document*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* element selector it is used to select all elements of same type*/
+/*h3{
+    color: chartreuse;
+} let us consider now we want h1 and h3 to be same color so*/
+
+
+h1,h3{ /*when we want to use  2 or more elements under same property we can use ,*/
+    color: #b92b27;
+}
+
+/*ID selector whic  gives css property only for particular id*/
+#login{
+    color: cyan;
+    background-color: black;
+}
+/*here we used use # for id and login is the id used in login button it is case sensitive
+we must use the same thing used in id*/
+
+/*class selector give css property with the class name*/
+.upvote{  /*here uptove is the class name given to upvote button*/
+    color:black;
+    background-color: cyan;
+    font-weight: 900;
+}
+
+
+/*Descendant selector*/
+p a{ /*here the p denotes parent elen=ment paragraph and  a is attribute element*/
+    color: blue;
+    background-color: gold;
+}
+
+nav  ul li{
+    color: chartreuse;
+}
+
+/*Adjacent sibling combinator*/
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    color: black;
+    background-color: aliceblue;
+    font-weight: 700;
+}
+
+/*child combinator*/
+div > input{  /*here div is parent element and input is child*/
+    color: chartreuse;
+    background-color: black;
+
+}
+
+/*Attribute Selector*/
+input[type="text"]{
+    color:aqua
+}
+/*to change background color
+input[type]{
+    background-color: burlywood;
+}*/
+
+
+/* Pseudo class :Hover it is a speacial state to selected element*/
+button:hover{ /*hover is a special thing when cursor is moved on the button it color changes*/
+    color: whitesmoke;
+    background-color: black;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+/* pseudo class : Active when we click on sumething it becomes active at that time we change color*/
+h3:active{
+    color: rgb(232, 38, 135);
+}
+
+button:active{
+    background-color: blue;
+}
+
+/* pseudo class: Checked */
+input[type="radio"]:checked +label{ /*here we are using label because its in sibling relation*/
+    color: blue;
+    font-weight: bold;
+}
+
+#wr :nth-of-type(2n){  /*here 2n = 2*n number so by this we can change number of elements */
+    background-color: blanchedalmond;
+}
+
+/*Pseudo elements*/
+/*a keyword added to specific part of selector that lets to select a specific part of elements*/
+/*::first-letter*/
+h1::first-letter{
+    color: goldenrod;
+}
+#we::first-line{
+    color: #b92b27;
+}
+
+/*selection is used when we select a particular line ot select*/
+#we::selection{  /*selection is ctrl+a*/
+    background-color: cyan;
+}
+
+/*!important specificty*/
+h1::first-letter{
+    color: #b92b27 !important;
+}

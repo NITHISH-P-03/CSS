@@ -1,0 +1,42 @@
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    transition: 2s;  /*duration of transition*/
+    /* transition-duration: 2s; both transition and transition-duration are same */
+    /* here we used transition on hover to change color at 1sec */
+
+    /*to add delay
+    transition-delay: 1s;
+    /*after 1sec it changes
+
+}
+
+div:hover{
+    background-color: goldenrod;
+    border-radius: 50%;
+    /*to convert to circle
+    border : dashed black 5px
+
+} */
+
+
+/*drop effect*/
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    margin : 0 auto; /*it takes element to the center*/
+    margin-top: 10px;
+    transition: margin-top 2s ease-in 0.2s;
+
+
+
+}
+
+div:hover{
+    background-color: cornsilk;
+    margin-top: 400px;
+
+}

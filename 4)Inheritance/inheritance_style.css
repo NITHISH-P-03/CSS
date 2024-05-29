@@ -1,0 +1,24 @@
+/*div{
+    color: cyan;
+}*/
+
+
+div{  
+    background-color: gold;
+    /*here we can see input boxses doesnt have div color and even button*/
+}
+
+/*To have the color for input 
+we must inherit the color*/
+input{
+    background-color: inherit;
+}
+
+/*Similarly to button*/
+button{
+    background-color: inherit;
+}
+
+button:hover{
+    background-color: brown;
+}

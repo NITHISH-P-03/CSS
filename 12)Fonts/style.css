@@ -1,0 +1,14 @@
+h1{
+    .tiro-tamil-regular {
+        font-family: "Tiro Tamil", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .tiro-tamil-regular-italic {
+        font-family: "Tiro Tamil", serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+}

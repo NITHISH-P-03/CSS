@@ -1,0 +1,156 @@
+/*Create with clean without margin and padding*/
+*{  /*star reprsent this property is for entire css*/
+    margin: 0;
+    padding: 0;
+    /*To add a font for entire thing*/
+    font-family: "poppins", sans-serif;
+}
+
+
+/*To set image as background*/
+.main_box{
+    background-image: url(photo.jpg);
+    /*when u see image shows only for half of the page till the div not fo rentire box*/
+    /*so for entire npage we can use viewport vh or height=100%*/
+    height: 100vh;
+    background-size: cover;
+}
+
+/*button one is for the 3lines menu button*/
+.btn_one{
+    color: azure;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;/*position according to parent*/
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*sidebar menu is the entire div*/
+/*here the sidebar menu is the parent element so we can take 
+position wiht respect ot this element*/
+.sidebar_menu{
+    position: fixed; 
+    left: -330px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255 ,0.1);
+    box-shadow: 0 0 6px rgb(153, 152, 152) ;
+    transition: all 0.4s ease-in-out;
+}
+
+/*here position is absolute because we are taking positon wrt to p0arent*/
+.sidebar_menu .logo{
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgb(153, 152, 152) ;
+    height: 60px;
+}
+
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left:60px;
+    text-decoration: none;
+    color: azure;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sidebar_menu .btn_two{
+    position: absolute;
+    left: 275px;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar_menu .menu {
+    position: absolute; 
+    top:80px;
+    text-decoration: none;
+    color: azure;
+    width: 100%;
+}
+
+.sidebar_menu .menu li{
+    margin-top:4px;
+    padding: 10px 20px;
+}
+
+
+.sidebar_menu .menu i{
+    padding-right: 5px;
+
+}
+
+.sidebar_menu .menu i,a{
+    text-decoration: none;
+    font-size: 15px;
+    color: azure;
+}
+
+
+.sidebar_menu .social_media{
+    
+    position: absolute;
+    left: 25%;
+    bottom:50px
+}
+
+
+.sidebar_menu .social_media i{
+    font-size: 20px;
+    opacity: 0.5;
+    color: azure;
+    padding: 4px;
+
+}
+
+
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px gold ;
+}
+
+.btn_one:hover{
+    font-size:30px;
+}
+
+
+.btn_two:hover{
+    font-size:30px;
+}
+
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    /* font-size: 25px; or*/ transform: scale(1.2); 
+}
+
+
+#check:checked ~.sidebar_menu{
+    left: 0;
+}
+
+
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
+
+.btn_two:checked ~.sidebar_menu{
+    left: -330px;
+}
+
+
+#check{
+    opacity: 0;
+}
+
+
+
+
+

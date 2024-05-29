@@ -1,0 +1,26 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.two{
+    background-color: gold;
+    position: relative;
+    bottom: 50px;
+}
+.three{
+    background-color: lime;
+}
+
+/*here we can see that 2 overlaps on 1 so 1and 3 are in bottom level
+and 2 in one level above it forms a stack*/
+
+/* Z-INDEX */
+.one{
+    background-color: cyan;
+    position: relative;
+    z-index: 1; /*remove z index and see*/
+}
+/*z index works only it the element position is relative or given if it 
+static or default it doesnt work */

@@ -1,0 +1,14 @@
+div{
+    height: 200px;
+    width: 200px;
+    /* alpha channel is used to control the opacity of the elements */
+    background-color: #ff0000a1;
+    /* here a is alpha which sets the opacity of the elemetn */
+}
+
+#opacity{
+    background-color: #ffd700;
+    opacity: 0.5;
+    /*when opacity made zero everything banishes even heading and button
+     nut in alpha only color vanishes */
+}

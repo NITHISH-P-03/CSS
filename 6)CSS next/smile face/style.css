@@ -1,0 +1,67 @@
+.face{
+    width: 400px;
+    height: 400px;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.mouth{
+    width: 200px;
+    height: 75px;
+    background-color: black;
+    border-radius:0 0 50px 50px;
+    position: absolute;
+    top:250px;
+    left: 100px;
+}
+
+/* .leye{
+    width:50px;
+    height:50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+
+.reye{
+    width:50px;
+    height:50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 250px;
+} */
+
+.leye, .reye{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+}
+
+.reye{
+    left: 250px;
+}
+
+.teeth,.rteeth{
+    width: 20px;
+    height: 40px;
+    background-color: wheat;
+    border-radius: 0 0 10px 8px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    border: solid 2px;
+}
+.rteeth{
+    left: 180px;
+}

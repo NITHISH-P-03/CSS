@@ -1,0 +1,66 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: grey;
+    display: grid;
+
+
+    /* here when we apply grid similar to flex  it starts creating a
+    grid with space between them the space is nothing nothing but
+    invisible grid lines we can check that in inspect option */
+
+      /* to create rows in grid */
+    /* to create columns in grid */
+    /* grid-template-rows: 50px 50px 50px 50px 50px; */
+  
+    /* grid-template-columns: 200px 200px 200px; */
+
+    /* grid-template-columns: auto auto auto;
+    here 3 auto is given it divides the div into 3 equal columns 
+    and another thing is it doesnt divide equal in olumns but it depends on the content
+    whether it over flows or not etc auto is not preferable */
+
+    /*instead of auto we can use repaeat for columns and rows*/
+    /* grid-template-rows: repeat(3,1fr);
+    here repeat divides div into 3 equal rows and other space are equally shared; */
+    /* here fr represents the 1 fraction of 100% of width */
+
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+
+    /*TO create gaps or spaces between the lines or columns*/
+    /* row-gap: 10px;
+    column-gap: 10px;
+    grid-gap: 10px; here it represent 10px for both columns and rows */
+
+    grid-gap: 10px 20px;
+}
+.item{
+    /*it width and height is commented out the item div takes entire grid cell*/
+    /* width: 100px;
+    height:50px;  */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+ .one{
+    /* grid-column is used to define an items starting and ending position */
+    /* it applies when the grid is entire filled that means no width and height seperatly given for div
+    if seperately given the div takes the height and width and the remaining part will be reserved
+    if u want check by commenting height and width in commment section */
+    /* grid-column-start: 1;/*here 1 is the line number not the track number; */
+    /*grid-column-end: 3; */
+
+    /* here the above thing can be written as grid-column:start_col/end_col */
+    grid-column: 1/4; /*here 4 is the line number*/
+    /* here we can use span number it is nothing but the number of columns you want */
+    /* grid-column: 1/span 4; */
+ }
+
+ .two{
+    /* similarly for grid-row everything is same only name changed */
+    grid-row:2/6;  /*row_start/row_end*/                                                                                                                                                                                                                                                                                                                      
+ }

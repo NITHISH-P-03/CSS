@@ -1,0 +1,49 @@
+
+/*It creates a space of margin above*/
+section{
+    margin-top: 100px;
+}
+
+div{
+    width: 200px;
+    height: 50px;
+    background-color: gold;
+    border: 4px solid black;
+    margin: 10px auto;
+}
+
+div:nth-of-type(2n){
+    background-color: aqua;
+}
+
+div:nth-of-type(3n){
+    background-color: coral;
+}
+
+/*transform*/
+/* rotate is used to rotatw */
+#one{
+    transform: rotate(45deg);
+}
+
+/* it is used increase or decrese the size */
+#two{
+    /* transform: scale(0.5); */
+    /* it even can transform in x and y axis */
+    transform: scale(0.5,2);
+}
+
+#three{
+    /* transform: translate(50px,50px); x and y axis */
+    /*It moves along X and Y axis*/
+    transform: translateX(50px);
+    transform: translateY(50px);
+}
+
+#four{
+    transform: skew(30deg);
+}
+
+#five{
+    transform: rotate(30deg) skew(30deg) translate(200px);
+}

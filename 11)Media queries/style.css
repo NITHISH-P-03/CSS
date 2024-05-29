@@ -1,0 +1,53 @@
+/* media queries are used for creating responsive websites */
+div{
+    background-color: black;
+    color: aliceblue;
+}
+@media (width: 400px) {
+    div{
+        background-color: aqua;
+        color: black;
+    }
+}
+
+/* go to inspect and change the screen size to 400px exactly it changes color */
+
+
+/*Min width and Max width*/
+
+h1{
+    background-color: aquamarine;
+}
+
+/* here the minnimum width refers to when width which is more than or equal to 400 color get changes */
+@media (min-width:400px){
+    h1{
+        background-color: cyan;
+        border: 2px solid black;
+    }
+}
+
+@media (max-width:400px){
+    .one{
+        background-color:aqua ;
+        border: 2px solid red;
+        color: burlywood;
+    }
+}
+
+@media(min-width:200px) and (max-width:300px){
+    .two{
+        background-color: greenyellow;
+        color: lemonchiffon;
+        border: 2px solid lime;
+        margin: 10px;
+    }
+
+}
+
+/* Orientation -- landscape,potraiat,  */
+@media(orientation:landscape){
+    div{
+        background-color: brown;
+    }
+}/*Check in inspect*/

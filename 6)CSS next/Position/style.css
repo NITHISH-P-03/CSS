@@ -1,0 +1,41 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#static{
+    background-color: gold;
+    position: static;
+    top: 100px;
+    left: 100px;
+    /* here position: is static so top and ledt doesnt work; */
+
+}
+
+
+#relative{
+    background-color: gold;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute{ /*It takes according to x and y axis.*/
+    background-color: gold;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+#fixed{
+    background-color: gold;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+ /*Scroll down to understand*/   
+}

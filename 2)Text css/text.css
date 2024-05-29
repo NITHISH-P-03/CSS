@@ -1,0 +1,43 @@
+h1{
+    text-align: center; /*The h1 tag will be aligned to center*/
+
+    /*letter spacing used to control the space between them*/
+    letter-spacing: 30px;
+}
+
+h2{
+    text-align: right;
+    /*font weigth is used to increase or decrease the boldness*/
+    font-weight: normal;  /*100-700 range*/
+
+    text-decoration: overline cyan;
+}
+
+p{
+    text-align: end;  /*left = start right=end*/
+    font-weight: 500;
+    /*line-height is used to control the line height*/
+    line-height: 3.0;
+    font-family: fantasy; /*to change font style*/
+
+}
+
+/*Text decoration*/
+h3{
+    text-decoration: line-through red; /*overline, line through,underline*/
+    
+}
+
+h4{
+    text-decoration:goldenrod double underline ; /*to give wavy underline and double is used to underline twice*/
+    /*font-size :  here h4 is very small we can change*/
+    font-size: 40px;
+    /*font-family is used to change font style*/
+    font-family: Arial;
+} 
+
+a{
+    /*here generally anchor tags have default underline to remove
+    we can done by text dec*/
+    text-decoration: none; /*here none is used for nothing*/
+}

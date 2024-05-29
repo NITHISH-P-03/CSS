@@ -1,0 +1,38 @@
+/*this is external style sheet and we able to link with html 
+h1{
+    color: cadetblue; background-color: chocolate;
+}*/
+/*to link style sheet in html
+<head>
+  <link rel="stylesheet" href="style.css">
+ </head*/ 
+
+
+ /*1)color property : color:red;
+ h1{  /*here gold color doesn't apply only for one h1 tag but it applies for all h1 tag in html
+    color: gold;
+ }
+
+ p{
+    color: cyan;
+ }
+ button{
+    color: forestgreen;
+ } */
+
+ /*2)Background Property : background-color = red;*/
+ h1{
+    background-color: aqua;color:blue;  
+ }
+ p{
+    color:cyan; background-color: brown;
+ }
+ button{
+    color: gold;
+    background: black;
+ } /*here we can use all the above thing here we
+ backgrond : can be set for image video color etc but espically only for color we can use
+ background-color*/
+ h2{
+   color: rgb(255,1220,0); /*like this we can declare color*/
+ }

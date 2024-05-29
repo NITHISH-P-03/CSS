@@ -1,0 +1,52 @@
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: cyan;
+    animation-name: fontanimation,text; /*tow add more than one animation , should be used*/
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-iteration-count:5;
+    animation-direction: alternate;
+    /*normal,reverse,alternate,re-alternate*/
+
+
+    
+/* Animation shorthand */
+/* animation: text 3s ease-in 0s infinite alternate */
+}
+
+/*To create an animation on font THis is the Blue print for animation*/
+@keyframes fontanimation /*anyname*/ {
+    from{font-size: 20px;}
+    to{font-size: 40px;}
+}
+
+
+/*we can use more animation under single from and to*/
+@keyframes text{
+    from{color: black;
+        background-color: cyan;
+    }
+    to{color: whitesmoke;
+        background-color:goldenrod;
+    border-radius: 20%;}
+}
+
+
+.boxx{
+    height: 100px;
+    width:200px;
+    background-color: black;
+    animation: color 3s ease-in-out 0.1s infinite alternate;
+}
+
+@keyframes color{
+    0%{background-color: gold;}
+    30%{background-color: red;}
+    50%{background-color: whitesmoke;}
+    70%{background-color: greenyellow;}
+    75%{border-radius: 50%;}
+    100%{background-color: silver;}
+}
+
